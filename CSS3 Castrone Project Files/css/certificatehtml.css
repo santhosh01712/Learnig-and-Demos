@@ -1,0 +1,44 @@
+body{
+    height: 100%;
+    width: 100%;
+    background-image: url(../images/bg.jpg);
+    background-position: left;
+    background-size: cover;
+}
+h3{
+    height: 40px;
+    width: 100%;
+    margin-left: 2%;
+    text-align: center;
+    font-size: 40px;
+    color: rgba(40, 98, 117,0.67);
+    font-family:Arial, Helvetica, sans-serif;
+    text-shadow: -5px -5px blue;
+}
+.bmenu li{
+    margin: 1%;
+    text-align: center;
+    list-style-type: none;
+    font-size:70px;
+}
+.bmenu li a{
+    text-decoration:none;
+    color: rgba(255, 255, 255,0.8);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.bmenu li a{ 
+    height: 30px;
+    width: 100px;
+    border-radius: 15px;
+    border: 1px solid none;
+    padding: 0px,15px;
+    margin: 1%;  
+    transition: width 0.1s linear, border 0.1s linear,; 
+}
+.bmenu li a:hover{
+width: 500px;
+padding-left: 150px;
+padding-right: 150px;
+border:1px solid grey;
+background-color: grey;
+}
