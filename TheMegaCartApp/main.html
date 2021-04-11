@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html id="main">
+    <head>
+        <title>
+            Main Page
+        </title>
+        <style>
+            .mainBody{
+                text-align: center;
+                align-items: center;
+                background-color: lightgreen;
+                height: 500px;
+                width: 1200px;
+            }
+            #entirebox{
+                text-align: center;
+                margin-left: 250px;
+            }
+            #entirebox #list1 li{
+                display:table-cell;
+                border: 2px solid grey;
+                margin: 5px;
+                margin: 10px;
+
+            }
+
+
+        </style>
+    </head>
+    <body id="mainBody" class="mainBody">
+        <div class="timediv">
+            <P id='toptime' style="text-align: right;"></P>
+        </div>
+        <div class="heading">
+            <h1 id="heading1"></h1>
+        </div>
+        <div>
+            <p id="itemnav">Please Click on an Item to add it to the cart</p>
+        </div>
+        <div id="entirebox">
+            <ul id="list1">
+                <div id="first">
+                <li>
+                    <span>Clothing</span>
+                    <a href="" id="clothing"><img src="./images/clothing.jpg" alt="Image not available"> </a>
+                </li>
+                <li>
+                    <span>Beauty & Health</span>
+                    <a href="" id="beauty"><img src="./images/health.jpg" alt="Image not available"></a>
+                </li>
+                </div>
+                <div id='second'>
+                <li>
+                    <span>Footwear</Footer></span>
+                    <a href="" id="footwear"><img src="./images/footwear.jpg" alt="Image not available"> </a>
+                </li>
+                <li>
+                    <span>School Bags</span>
+                    <a href="" id="school"> <img src="./images/school.jpg" alt="Image not available"> </a>
+                </li>
+                </div>
+            </ul>
+        </div>
+        <div id="cartdiv">
+           <a href="./cart.html"> <button id="MainButton">Click Here  to View Cart</button></a>
+        </div>
+        <script src="./JS/Main.js"> </script>
+    </body> 
+</html>

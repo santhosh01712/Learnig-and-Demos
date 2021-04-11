@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html id="log">
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Login-Page
+        </title>
+        <style>
+            .LoginBody{
+                text-align: center;
+                background-color: lightgreen;
+                height: 500px;
+                width: 1200px;
+            }
+            .loginform .form1,.loginform .form2{
+                margin: 3px;
+            }
+            .loginform .form3{
+                margin: 15px;
+            }
+            .signup{
+                margin: 20px;
+            }
+        </style>
+    </head>
+    <body id="LoginBody" class="LoginBody" onload="Login()">
+        <div class="loginHeader">
+            <h1>The Mega Cart</h1>
+        </div>
+        <div class="loginformdiv">
+            <form class="loginform">
+                <div class="form1">
+                    <label for="User">Enter username</label>
+                    <input id="User" type="text" required>
+                </div>
+                <div class="form2">
+                    <label for="pass">Enter password</label>
+                    <input id="Pass" type="password" required>
+                </div>
+                <div class="form3">
+                    <button id="Login" onclick="window.location.href = './main.html'">Login</button>
+                </div>
+            </form>
+        </div>
+        <div class="signup">
+            <span>New user Sign Up Here </span><a href="./Signup.html">Sign Up</a>
+        </div>
+        <p id="change"></p>
+        <script src="./JS/Login.js"></script>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html id="cart">
+    <head>
+        <title>Cart</title>
+        <style>
+            .cartbody{
+                text-align: center;
+                align-items: center;
+                background-color: lightgreen;
+                height: 500px;
+                width: 1200px;
+            }
+        </style>
+        
+    </head>
+    <body class="cartbody">
+        <div class="timediv">
+            <p id='carttoptime' style="text-align: right;"></p>
+        </div>
+        <div class="heading">
+            <a href="Login.html"><button id="logout" style="float: left; background-color: darkgrey;">Logout</button></a>
+            <h1 id="cartheading1" style="text-align: center;"></h1>
+        </div>
+        <p>You have bought <strong id="noOfItems"></strong></p>
+        <div id="vartext"></div>
+        <div>
+            <p>Your <strong>total</strong> bill is <strong id="totalamount"></strong></p>
+        </div>
+        <script src="./JS/Cart.js"> </script>
+    </body>
+</html>
