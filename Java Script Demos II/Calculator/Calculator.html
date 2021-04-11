@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <input id="operandOne" type="text"/>
+    <input id="operandTwo" type="text"/><br/>
+    <input type="radio" id="add" name="operator" value="+" checked>
+    <label for="add">+</label><br>
+    <input type="radio" id="subtract" name="operator" value="-">
+    <label for="subtract">-</label><br>
+    <input type="radio" id="multiply" name="operator" value="*">
+    <label for="multiply">*</label><br>
+    <input type="radio" id="divide" name="operator" value="/">
+    <label for="divide">/</label><br>
+    <button id="calculate">Calculate</button>
+    <p id="errorMessage"></p>
+    <script src="./Calculator.js"></script>
+</body>
+</html>

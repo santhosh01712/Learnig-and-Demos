@@ -1,0 +1,7 @@
+{
+    "India" : ["Andaman and Nicobar Islands","Lakshadweep","Tamilnadu","Kerala","Andhra Pradesh","Telungana","Karnataka","Maharastra"],
+    "USA" : ["Alabama","Arizona","California","Alaska","Arkansas"],
+    "England" : ["West Midlands","London","West Yorkshire","Greater Manchester","Kent"],
+    "Australia" : ["Western Australia","Australian Capital Territory","Northern Territory","New South Wales"],
+    "Canada" :["Alberta","Manitoba","Newfoundland and Labraded","British Columbia","New Brunswick"]
+}
