@@ -1,0 +1,67 @@
+<html>
+    <body>
+        <script>
+            let mylist=['edison','tesla','einsiton'];
+            let [,a]=mylist;
+            document.write(a+"   first  question<br/>"); // tesla
+
+            // second 
+            let list1=[
+                {name:"burce wayne", city:'Gotham'},
+                {name:'ooliver',city:'Star'},
+                {name:'Barrty',city:'Centala'}
+            ];
+            let [,,darlknight]=list1;
+            function cyber({name:x,hr:y,power:k,city:z}){
+                document.write(x+'-'+y+'-'+k+'-'+z)
+            }
+            cyber(darlknight) // Barry underfiend undefined Central
+
+            let x=[1,2,3];
+            let y=[1,2,3];
+            const combinedarray1 = [...x,...y];
+            console.log("one "+combinedarray1);
+            let z=[3,4,5,6];
+
+            //a b
+
+            result1 =[];
+            function check(para1,...para2){
+                return result1.push(para1,para2);
+            }
+            console.log(check("hello","world")); //2
+
+            let outpput=[];
+            var component =(...par1) => {
+                outpput =[...par1];
+                return outpput.filter((a) => a.includes('Script'));
+            }
+            console.log(component('Es6','JavaScript','CoffeeScript','React'));//['JavaScript','CoffeeScript']
+           
+            let employee = {
+                empId: 'I1001',
+                empName:{
+                    firstName : 'John',
+                    middleName :'Thomson',
+                    lastName :'Mark'
+                },
+                empStatus :'action'
+            }
+            let{firstName:middleName,lastName}=employee.empName;
+            console.log(middleName);//'John'
+
+            var temp = '8080';
+            if(true){
+                const temp=8080;
+                console.log(typeof temp); // number
+            }
+            let employeeList=[
+                {id:'I1001',name:"Tom"},
+                {id:'I1002',name:"Jack"},
+                {id:'I1003',name:'Tim'},
+                {id:'I1004',name:"Sam"}
+            ]
+            console.log(`Emp ID: ${employeeList[0].id} Emp name: ${employeeList[0].id}`);// backticks
+        </script>
+    </body>
+</html>

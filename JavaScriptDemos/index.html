@@ -1,0 +1,39 @@
+<html>
+<head>
+    <title>JavaScript Intoduction</title>
+    <script>
+        console.log("This content is from script tag within <head> tag");
+    </script>
+</head>
+<script>
+    finalCost=0;
+    ticketCost=9;
+    seats=5;
+    discount=(i) => {
+        switch(i){
+            case 1:
+                return 5;
+                break;
+            case 2:
+                return 7;
+                break;
+            case 3:
+                return 9;
+                break;
+            case 4:
+                return 11;
+                break;
+        }}  
+    for(i=1; i<seats; i++){
+        
+        discount_per=discount(i);
+        finalCost+=(ticketCost-(ticketCost*discount_per/100));
+        document.write("<br/>"+discount_per+"% discount! on Ticket "+i);
+    }
+    
+    
+
+</script>
+<body>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <body id="ids">
+        <h1>this is h1</h1>
+        <h2 class="cl">this is h2</h2>
+        <script>
+            document.write(navigator.appName);
+            document.write("<br/>"+navigator.appVersion);
+            document.write("<br/>"+navigator.platform);
+            document.write("<br/>"+navigator.userAgent);
+            a=document.getElementById("ids").firstChild;
+            console.log(a); 
+            b=document.getElementsByClassName("cl");
+            console.log(b);
+            document.write(b[0])
+        </script>
+    </body>
+</html>

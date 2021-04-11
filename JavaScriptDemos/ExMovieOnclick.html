@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Booking Details</title>
+    <style>
+        div#maincontent {
+            height: 100px;
+            width: 500px;
+            border: 1px solid #CEE2FA;
+            text-align: left;
+            color: #08438E;
+            font-family: calibri;
+            font-size: 20;
+            padding: 5px;
+            margin-left: 10px;
+        }
+        div#heading {
+            text-decoration: bold;
+            text-align: center;
+            margin-top: 40px;
+            margin-left: 10px;
+            width: 500px;
+            border: 1px solid #CEE2FA;
+            text-align: center;
+            color: #08438E;
+            background-color: #CEE2FA;
+            font-family: calibri;
+            font-size: 20;
+            padding: 5px;
+        }
+        h2 {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+ 
+<body>
+    <div id="heading">
+          <h2>Booking Summary</h2>
+    </div>
+    <div id="maincontent">
+        <script>
+            seats=prompt("enter the no of seats");
+            ticketCost=9;
+            finalCost=0;
+            total_cost = ticketCost*seats;
+            document.write("Cost per Ticket is: $"+ticketCost);
+            document.write("<br/>Total Cost: $"+total_cost);
+            document.write("<br/><br/>Congratulations! 4 seats are eligible for discount.")
+            function calculateDiscount(){
+                for(i=1; i<=seats; i++){
+                    switch(i){
+                        case 1:
+                            discount_per= 5;
+                            break;
+                        case 2:
+                            discount_per= 7;
+                            break;
+                        case 3:
+                            discount_per= 9;
+                            break;
+                        case 4:
+                            discount_per= 11;
+                            break;
+                    }
+                    finalCost+=(ticketCost-(ticketCost*discount_per/100));
+                }
+                
+                alert("Amount payable after discount is"+finalCost  ); 
+            }            
+            
+        </script>
+        <a onclick="calculateDiscount()"> Apply. </a>
+    </div>
+</body>
+ 
+</html>

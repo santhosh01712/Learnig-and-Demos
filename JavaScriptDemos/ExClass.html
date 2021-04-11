@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>This is class execrise</title>
+        <style>
+            body{
+                text-align: center;
+                padding: 100px;
+                margin: 100px;
+                color:green;
+                border: 1px solid red;
+            }
+        </style>
+    </head>
+    <body>
+        <script>
+            class Person{
+                constructor(name,age){
+                    this.name=name;
+                    this.age=age;
+                }
+            }
+            class Employee extends Person{
+                constructor(name,age,role,phone){
+                    super(name,age);
+                    this.role=role;
+                    this.phone=phone;
+                }
+                getDetails(){
+                    document.write("The Details of the Employee are:<br/>");
+                    document.write("<br/>Name: "+this.name+"<br/>Age: "+this.age+"<br/>Role: "+this.role+"<br/>Phone: "+this.phone);
+                }
+            }
+            empObj= new Employee("Beron","24","Technology Analyst",90900921);
+            empObj.getDetails();
+        </script>
+    </body>
+</html>

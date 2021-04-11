@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Operators Demo</title>
+    <style>
+        body {
+            padding-top: 10px;
+        }
+    </style>
+</head>
+
+<body class="container-fluid">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3>Body Temperature</h3>
+        </div>
+
+        <div class="panel-body">
+            <p>Your body temperature is higher than the normal:<br/><br/>
+                <span class="blinking">
+                    <script>
+                        let tempFahren = 99;
+                        const NORMAL_FAHREN = 98.6;
+                        let tempCelsius;
+                        const THIRTYTWO = 32;
+                        const TEMP = 1.8;
+                        tempCelsius = (tempFahren - THIRTYTWO) / TEMP;
+                        let fever = tempFahren > NORMAL_FAHREN;
+                        fever=0.5
+                        switch (fever){
+                            case 10:
+                                document.write("Normal Fever");
+                                break;
+                            case 5:
+                                document.write("low Fever");
+                                break;
+                            
+                            case 0:
+                                document.write("zero Fever");
+                                break;
+                        }
+                    </script>
+                </span>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

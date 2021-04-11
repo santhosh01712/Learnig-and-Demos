@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+        This is Object</title>
+    </head>
+    <body>
+        <h1>
+            This is Obejct Examble
+        </h1>
+        <script>
+            let DateObj = new Date();
+            document.write("Date with Time is"+DateObj);
+            document.write("Date and time"+DateObj);
+            let UserDate= new Date(2021,01,16,12,12,12);
+            document.write("<br/>this is my time"+UserDate)
+            let dateObject1 = new Date(); 
+            document.write("<br/>Date is: " + dateObject1.getDate()); 
+            document.write("Day is: " + dateObject1.getDay()); 
+            document.write("Year is: " + dateObject1.getYear()); 
+            document.write("Horrs: " + dateObject1.getHours()); 
+            document.write("Month is: " + dateObject1.getMonth()); 
+            document.write("Time is: " + dateObject1.getTime()); 
+            document.write("Millisecond: " + dateObject1.getMilliseconds()); 
+
+            str1= "This is the string";
+            document.write("<br/>this position of Th in "+str1+"IS AT"+str1.charAt(1));
+            document.write("<br/>This is tha MATCH() property "+str1.match(/ is /).index);
+        </script>
+    </body>
+</html>

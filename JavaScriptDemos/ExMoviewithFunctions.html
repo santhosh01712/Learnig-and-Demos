@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Booking Summary</title>
+    <style>
+        div#maincontent {
+            height: 250px;
+            width: 500px;
+            border: 1px solid #CEE2FA;
+            text-align: left;
+            color: #08438E;
+            font-family: calibri;
+            font-size: 20;
+            padding: 5px;
+        }
+        div#heading {
+            text-decoration: bold;
+            text-align: center;
+            margin-top: 80px;
+            width: 500px;
+            border: 1px solid #CEE2FA;
+            text-align: center;
+            color: #08438E;
+            background-color: #CEE2FA;
+            font-family: calibri;
+            font-size: 20;
+            padding: 5px;
+        }
+        h2 {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+ 
+<body>
+    <center>
+        <div id="heading">
+            <h2>Booking Summary</h2>
+        </div>
+        <div id="maincontent">
+            <script>
+                ticketCost=9;
+                document.write("Actual cost per ticket: $"+ticketCost);
+                seats=prompt("Enter the no of tickets");
+                finalCost=0;
+                bookingAllowed=true;
+                calculateCost(seats);
+                if(bookingAllowed){
+                    document.write("<br/><br/>Amount Payable: $"+finalCost);
+                }
+                function calculateCost(seats){
+                    if(seats<=2){
+                        finalCost=ticketCost*seats;
+                        document.write("<br/>"+seats+" are not eligible for Festive discount!!")
+                    }
+                    else if(seats >2 && seats <=5){
+                        document.write("<br/><br/>"+seats+" are eligible for Festive discount!!<br/>");
+                        discount = seats =>{
+                            switch(i){
+                                case 1:
+                                    return 5;
+                                    break;
+                                case 2:
+                                    return 7;
+                                    break;
+                                case 3:
+                                    return 9;
+                                    break;
+                                case 4:
+                                    return 11;
+                                    break;
+                            }
+                        }   
+                        for(i=1; i<=seats; i++){
+                            discount_per=discount(i);
+                            finalCost+=(ticketCost-(ticketCost*discount_per/100));
+                            document.write("<br/>"+discount_per+"% discount! on Ticket "+i);
+                        }
+                    }
+                    else{
+                        bookingAllowed=false;
+                        document.write("<br/>Bookings Not allowd");
+                    }
+                }
+                
+            </script>
+        </div>
+    </center>
+</body>
+ 
+</html>

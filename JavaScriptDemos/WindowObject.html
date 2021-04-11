@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WindowObject</title>
+    </head>
+    <body>
+        <p> This is paragrapeh</p>
+        <script>
+            let inheight=window.innerHeight;
+            let inwidth=window.innerWidth;
+            document.write(inheight+"   "+innerWidth);
+            localStorage.setItem('username','Bob'); 
+            console.log("Item stored in localStorage is" + localStorage.getItem('username')); 
+            //Returns Item stored in localStorage is Bob 
+            sessionStorage.setItem('password', 'Bob@123'); 
+            console.log("Item stored in sessionStorage is " + sessionStorage.getItem('password')); 
+            
+        </script>
+    </body>
+</html>

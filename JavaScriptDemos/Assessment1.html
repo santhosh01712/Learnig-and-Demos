@@ -1,0 +1,63 @@
+<html>
+    <body>
+        <script>
+            let empId = 'I1005';
+            let employee = {
+                empId,
+                getEmpDetails(){
+                    return this.empId;
+                },
+                getDetails(){
+                    setInterval(()=> {return this.empId},1000);
+                }
+            }
+            console.log(employee.getEmpDetails());
+            console.log(employee.getDetails()); //I1005 unddefined
+          
+            let studentData = {
+                name:"john",
+                country:"India"
+            }
+            var dynamicProperty = "age";
+            studentData[dynamicProperty]=25;
+            var dynamicProperty ="city";
+            studentData.dynamicProperty ="pune";
+            console.log(studentData.age);
+            console.log(studentData.city);//25 undefined
+
+
+            let myArray = new Array([1,2,3]);
+            //myArray.delete(1);
+            console.log(myArray);//array do not supooer delete
+            
+            let name = "Sam";
+            function demp(){
+                name+="Mark"
+            }
+            console.log(name)
+            //Sam
+
+
+            new Promise(function (resolve,reject){
+                let b;
+                setTimeout(compute = (a=5) => resolve(a+b),1000 ) ;
+                b=25;
+            }).then(function (data) {console.log(data)}); // 30
+
+            const cars = [{'Name':'Toyoto','cost':324323},{'Name':'Benz','cost':2216}]; 326544
+            const x = cars.reduce((a,b)=>a+b.cost,5);
+            console.log(x);//+5
+
+            let states=[];
+            states.push(['Rihanna',
+        {
+            empID1 : 'I1001',
+            city :'BNG',
+            age:25
+        }])
+        console.log(...states)
+
+             
+        </script>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LoginPage</title>
+        <style>
+            body{
+                text-align: left;
+                color: blue;
+                font-weight: bold;
+            }
+            input{
+                margin:5px;
+                padding: 1px;
+
+               }
+        </style>
+    </head>
+    <body>
+        <form>
+            UserName :&nbsp; <input type="text" placeholder="Enter your UserName" id="uName">
+            <br/>Password :&nbsp;&nbsp; <input type="password" placeholder="Enter your Password" id="pass">
+            <br/><input id="sub" type="submit" >
+            <script>
+                a = document.getElementById('uName').value;
+                document.write(a);
+            </script>
+
+        </form>
+    </body>
+</html>

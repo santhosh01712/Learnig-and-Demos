@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            class Person{
+                constructor(name,age){this.pname=name;this.page=age;}
+                displayMasterDeails(){
+                    console.log("name :"+this.pname);
+                    console.log("age :"+this.page);
+                }
+            }
+            class Employee extends Person{
+                constructor(name,age,empId){
+                    super(name,age);
+                    this.empId = empId;
+                }
+                displayAllDetails(){
+                    displayMasterDeails();
+                    console.log("Employee Id:"+this.empId);
+                }
+            }
+            emp = new Employee('san',45,90);
+            emp.displayAllDetails();
+        </script>
+    </body>
+</html>
