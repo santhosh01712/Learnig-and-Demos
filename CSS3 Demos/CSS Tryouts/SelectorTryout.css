@@ -1,0 +1,29 @@
+ul li a 
+{
+	padding-left: 20px;
+	background-repeat: no-repeat;
+}
+a
+{
+	font-size:40px;
+}
+.website{
+    background: url("ImageSource/WWW.jfif") no-repeat;
+    background-size: 25px;
+    list-style-type: none;
+}
+.visit{
+    background: url("ImageSource/Secure.jfif") no-repeat;
+    background-size: 25px;
+    list-style-type: none;
+}
+.mail{
+    background: url("ImageSource/SendEmail.jfif") no-repeat;
+    background-size: 25px;
+    list-style-type: none;
+}
+.ftp{
+    background: url("ImageSource/FTP.png") no-repeat;
+    background-size: 25px;
+    list-style-type: none;
+}

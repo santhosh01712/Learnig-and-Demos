@@ -1,0 +1,20 @@
+a:hover {
+    background-color:lightgray;
+    color: green;
+}
+a::visited{
+    background-color: greenyellow;
+    color: indigo;
+}
+input[type="text"]:enabled {
+    background-color: lightblue;
+  }
+  input[type="text"]:required {
+    background-color: rgb(240, 142, 150);
+  }
+
+p::first-letter {
+    color: #e40f0f;
+    font-size: 200%;
+}
+  

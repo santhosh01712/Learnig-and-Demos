@@ -1,0 +1,11 @@
+.uppercase{
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px grey;
+}
+.decorate{
+    text-decoration: underline;
+}
+.indent{
+    text-indent: 10px;
+    text-shadow: 0 0 3px #fff, -1px -1px 0 hsl(172, 70%, 35%), -2px -2px 1px hsl(172, 36%, 48%), -2px -2px 2px hsl(80, 28%, 17%);
+}

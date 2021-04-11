@@ -1,0 +1,10 @@
+div{
+    width: 1000px;
+    height: 100px;
+    background: red;
+    transition: width 3s linear,height 3s linear;
+}
+div{
+    width: 100px;
+    height: 200px;
+}

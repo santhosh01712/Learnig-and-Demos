@@ -1,0 +1,16 @@
+#color_rgba {
+	background-color:rgba(255, 193,7,0.38);
+	color:#fff;
+}
+#color_hsl {
+	background-color:hsl(235, 100%, 80%);
+	color:#fff;
+}
+#color_hsla {
+	background-color:hsla(291, 64%, 42%, 0);
+	color:#fff;
+}
+#color_rgba,#color_hsl,#color_hsla
+{
+padding:5px;
+}

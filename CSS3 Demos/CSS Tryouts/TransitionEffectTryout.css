@@ -1,0 +1,45 @@
+.clothing
+{
+    float:left;
+    width: 350px;
+    height: 500px;
+    margin: 70px auto;
+    margin-left:200px;
+    padding: 40px;
+    border: 1px solid #ccc;
+    border-radius: 10px; 
+    box-shadow: 8px 8px 8px -5px rgba(0,0,0,.3);
+}
+img{
+    transition: margin-left 2s linear;
+}
+h2 {
+    text-align: center;
+}
+img:active{
+    margin-left: 600px;
+}
+.cart
+{
+    float:left;
+    width:350px;
+    height: 500px;
+    margin: 70px auto 200px;
+    margin-left:200px;
+    padding: 40px;
+    border: 1px solid #ccc;
+    border-radius: 10px; 
+    box-shadow: 8px 8px 8px -5px rgba(0,0,0,.3);
+}
+.button
+{
+	border-radius:5px;
+	box-shadow:0 0 2px rgba(0,0,0,0.5);
+    transition: background-color 1s,color 1s, font-size 1s  ;
+}
+.button:hover{
+    transform: rotate(180deg);
+    background-color: green;
+    color: white;
+    font-size: larger;
+}

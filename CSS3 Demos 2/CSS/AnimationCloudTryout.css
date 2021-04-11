@@ -1,0 +1,28 @@
+div{
+    height: 200px;
+    width: 1350px;
+    background-color: #2493ff;
+    font-size: 10px;
+    transition: background-color 3s, font-size 3s;
+}
+div:hover{
+    background-color:pink;
+    font-size: 30px;
+}
+@keyframes anim{
+    from{left: 10px;}
+    to{left:1200px;}
+}
+.a:hover{
+    background-color:yellow;
+    font-size:30px;
+    visibility: visible;
+}
+img{
+    position: relative;
+    animation-name: anim;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}

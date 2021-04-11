@@ -1,0 +1,21 @@
+body{
+    background-color: lightgray;
+}
+#pid{
+    background-color: yellow;
+}
+
+.red{
+    color: red;
+}
+
+div p{
+    background-color: yellowgreen;
+    color: tomato;
+}
+
+h1,h2,h3{
+    text-align: center;
+    background-color: greenyellow;
+    color: indigo;
+}

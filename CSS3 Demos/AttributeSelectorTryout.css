@@ -1,0 +1,15 @@
+a[target] {
+    text-decoration: none;
+}
+  
+  a[target=_blank] {
+    font-size: x-large;
+}
+  
+  section[class$="para"]::first-letter {
+    font-size: 200%; 
+    color: purple;
+}
+section[class *= "para"]{
+    font-style: italic;
+}
