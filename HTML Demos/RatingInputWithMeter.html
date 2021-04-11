@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+ 
+<html>
+    <head>
+        <title>Hussain's Shopping</title>
+        <meta name="keywords" content="Online, Shopping"/>
+    </head>
+  
+    <body>
+        <header> 
+            <nav>
+                <a href="Login.html"> Login </a> | 
+                <a href="Signup.html"> SignUp </a> | 
+                <a href="TrackOrder.html"> Track order </a>
+            </nav>          
+            <h1>Track your order</h1>
+        </header>
+    
+        <article>    
+            <h2>Rate your shopping experience:</h2>
+            
+            <form oninput="M1.value = parseInt(R1.value);M2.value = parseInt(R2.value);M3.value = parseInt(R3.value);M4.value = parseInt(R4.value);">
+                Delivery of product on time : 
+                    <input type="range" id="R1" min="0" max="100" step="10" value="10" />
+                    <meter min="0" max="100" for="R1" id="M1" value="10"></meter> <br/><br/>
+                Product quality : 
+                    <input type="range" id="R2" min="0" max="100" step="10" value="60">
+                    <meter id="M2" for="R2" min="0" max="100" value="60"> 60 of 100</meter><br/><br/> 
+                How friendly the site is : 
+                    <input type="range" id="R3" min="0" max="100" step="10" value="20">
+                    <meter id="M3" for="R3" min="0" max="100" value="20"> 20 of 100</meter><br/><br/> 
+                Were you able to find the product which you were looking for?: 
+                    <input type="range" id="R4" min="0" max="100" step="10">
+                    <meter id="M4" for="R4" min="0" max="100" value="20"> 20 of 100</meter><br/><br/> 
+            </form>
+        </article>
+ 
+        <footer>                        
+            <nav> About Us | Privacy Policy | Contact Us | FAQ | Terms & Conditions </nav>
+            Copyright &copy; 2018 | Giri 
+        </footer> 
+ 
+        <aside>
+            Like and Connect with us FB Twitter g+
+        </aside> 
+    
+</body>
+</html>
